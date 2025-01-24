@@ -23,7 +23,7 @@ foodCategoryRouter.post(
 
 foodCategoryRouter.get("/:id", async (req: Request, res: Response) => {
   const id = req.params.id;
-  const item = await FoodCategoryModel.findById;
+  const item = await FoodCategoryModel.findById(id);
   res.json(item);
 });
 
