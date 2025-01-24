@@ -23,8 +23,6 @@ connectMongoDB();
 
 app.use("/food-category/", foodCategoryRouter);
 
-//uur router baina.
-
 app.use("/food/", foodRouter);
 
 app.listen(PORT, () => {

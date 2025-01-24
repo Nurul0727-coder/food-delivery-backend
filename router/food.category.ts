@@ -65,7 +65,6 @@ foodCategoryRouter.put("/:id", async (req: Request, res: Response) => {
 
 
 
-
 // app.get("/food/", async (req: Request, res: Response) => {
 //     const data = await FoodCategoryModel.find();
 //     res.json(data);

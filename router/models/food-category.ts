@@ -14,5 +14,4 @@ const FOOD_CATEGORY_SCHEMA = new Schema(
     "food-category"
   );
 
-
   export {FoodCategoryModel};
