@@ -10,7 +10,6 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-
 configDotenv();
 
 const connectMongoDB = async () => {
