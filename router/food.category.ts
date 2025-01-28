@@ -3,7 +3,7 @@ import { FoodCategoryModel } from './models/food-category';
 
 export const foodCategoryRouter = Router();
 
-foodCategoryRouter.get('/:id', async (req, res) => {
+foodCategoryRouter.get('/', async (req, res) => {
     const items = await FoodCategoryModel.find();
   res.json(items);
 });
@@ -23,7 +23,7 @@ foodCategoryRouter.post(
 
 foodCategoryRouter.get("/:id", async (req: Request, res: Response) => {
   const id = req.params.id;
-  const item = await FoodCategoryModel.findById;
+  const item = await FoodCategoryModel.findById(id);
   res.json(item);
 });
 
