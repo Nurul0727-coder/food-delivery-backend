@@ -15,3 +15,4 @@ const FOOD_CATEGORY_SCHEMA = new Schema(
   );
 
   export {FoodCategoryModel};
+  
