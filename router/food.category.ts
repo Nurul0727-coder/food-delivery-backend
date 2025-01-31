@@ -3,6 +3,7 @@ import { FoodCategoryModel } from './models/food-category';
 
 export const foodCategoryRouter = Router();
 
+
 foodCategoryRouter.get('/', async (req, res) => {
     const items = await FoodCategoryModel.find();
   res.json(items);
@@ -22,6 +23,10 @@ foodCategoryRouter.post(
 });
 
 foodCategoryRouter.get("/:id", async (req: Request, res: Response) => {
+  const token = req.get("authentication");
+
+  console.log({token})
+
   const id = req.params.id;
   const item = await FoodCategoryModel.findById(id);
   res.json(item);
